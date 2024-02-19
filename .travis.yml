@@ -1,10 +1,10 @@
 language: node_js
 node_js:
-  - "10.24.1"
+  - "node"
 
 branches:
   only:
-  - main
+  - gh_pages
 
 cache:
   directories:
@@ -24,4 +24,4 @@ deploy:
   github_token: $github_token
   local_dir: build
   on:
-    branch: main
+    branch: gh_pages
