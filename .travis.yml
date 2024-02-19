@@ -4,7 +4,7 @@ node_js:
 
 branches:
   only:
-  - master
+  - main
 
 cache:
   directories:
@@ -24,4 +24,4 @@ deploy:
   github_token: $github_token
   local_dir: build
   on:
-    branch: master
+    branch: main
